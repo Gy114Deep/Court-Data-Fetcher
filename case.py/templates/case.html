@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Data Fetcher</title>
+</head>
+<style>
+    #project{
+        text-align: center;}
+    .Div_style{
+        background-color: #5d97c3;
+        text-align: center;
+        margin: 6% 20%;
+        border: 1.8px dashed #010101;}
+    .heading{
+        background-color: rgb(0, 63, 127);
+        margin-top: 1.9px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .interface:hover{
+        background-color: rgba(2, 2, 2, 0.729)
+        color #ffffff;
+        transform: scale(1.2);
+        transition-delay: 0s }
+    .interface{
+        border-radius:2px ;
+        border-color: rgb(38, 37, 39);}
+    .submit{
+        background-color:rgba(6, 61, 110, 0.98) ;
+        border: 1.6px solid #000000;
+        margin: 4px;
+        margin-left: 6px;
+        color: #ffffff;
+        text-align: left;
+        font-size: medium
+}
+    @media(max-width:410px){
+    body{background-color: #232222;
+    margin-bottom: 0;}
+.Div_style{margin-bottom: 10px;}}
+#go{
+    text-decoration: none;
+    background-color: rgba(105, 105, 105, 0.794);
+    font-style: bold;
+    color: #000000;
+    margin-right:6px;
+    text-align: right;
+    font-size: medium
+}
+</style>
+<body id="project">
+    <div class="Div_style">
+    <h1 class="heading">COURT DATA FETCHER<hr></h1>
+    <form method="post">
+    <label>Case Type *</label>
+    <li><input type="text" name="case_type" class="interface" required></li><br>
+    <label>Case Number *</label><br>
+    <li><input type="text" name="case_number" class="interface" required></li><br>
+    <label>Filling Year *</label><br>
+    <li><input type="text" name="filing_year" class="interface" required></li><br>
+    <button ><a id="go" name="go_back" href="/"> Go Back </a></button>
+    <button type="Submit" class="submit">Fetch Case Info</button>
+    </div></form>
+    
+</body>
+</html>
